@@ -1,4 +1,4 @@
-package com.raksit.example.template.tracing;
+package com.raksit.example.rule.tracing;
 
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;

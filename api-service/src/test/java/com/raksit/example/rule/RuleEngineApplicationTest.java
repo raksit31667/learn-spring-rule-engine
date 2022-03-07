@@ -1,10 +1,10 @@
-package com.raksit.example.template;
+package com.raksit.example.rule;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TemplateApplicationTest {
+class RuleEngineApplicationTest {
 
   @Test
   void contextLoads() {

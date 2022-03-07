@@ -1,4 +1,4 @@
-package com.raksit.example.template.tracing;
+package com.raksit.example.rule.tracing;
 
 import org.slf4j.MDC;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-# example-spring-template
+# learn-spring-rule-engine
 
 My template for initializing Spring Boot application
 

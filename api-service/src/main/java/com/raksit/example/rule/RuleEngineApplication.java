@@ -1,6 +1,6 @@
-package com.raksit.example.template;
+package com.raksit.example.rule;
 
-import com.raksit.example.template.tracing.MdcTaskDecorator;
+import com.raksit.example.rule.tracing.MdcTaskDecorator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,7 +11,7 @@ import java.util.concurrent.Executor;
 
 
 @SpringBootApplication
-public class TemplateApplication {
+public class RuleEngineApplication {
 
   @Autowired
   private MdcTaskDecorator mdcTaskDecorator;
@@ -25,6 +25,6 @@ public class TemplateApplication {
   }
 
   public static void main(String[] args) {
-    SpringApplication.run(TemplateApplication.class, args);
+    SpringApplication.run(RuleEngineApplication.class, args);
   }
 }

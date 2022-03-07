@@ -40,14 +40,14 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.projectlombok:lombok:1.18.12'
+    implementation 'org.projectlombok:lombok:1.18.22'
     implementation 'net.logstash.logback:logstash-logback-encoder:6.6'
     implementation 'io.micrometer:micrometer-registry-prometheus:1.7.3'
     implementation 'net.rakugakibox.spring.boot:logback-access-spring-boot-starter:2.7.1'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.2'
     testImplementation 'io.rest-assured:rest-assured:3.1.0'
-    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
 }
 
 processResources {
@@ -117,11 +117,11 @@ pmd {
 }
 
 jacoco {
-    toolVersion = '0.8.2'
+    toolVersion = '0.8.6'
     reportsDir = file("$buildDir/reports/jacoco")
 }
 
-def jacocoExcludedClasses = ["com/raksit/example/template/TemplateApplication*"]
+def jacocoExcludedClasses = ["com/raksit/example/rule/RuleEngineApplication*"]
 
 jacocoTestCoverageVerification {
     violationRules {
@@ -146,21 +146,6 @@ jacocoTestReport {
         classDirectories.setFrom(classDirectories.files.collect {
             fileTree(dir: it, exclude: jacocoExcludedClasses)
         })
-    }
-}
-
-task docker(type: com.google.cloud.tools.jib.gradle.BuildImageTask) {
-    jibExtension = project.extensions.getByName('jib')
-    doFirst {
-        jib {
-            to {
-                image = "registry-1.docker.io/raksit31667/example-spring-template"
-                auth {
-                    username = dockerUsername
-                    password = dockerPassword
-                }
-            }
-        }
     }
 }
 
