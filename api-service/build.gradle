@@ -27,7 +27,7 @@ apply plugin: 'jacoco'
 apply plugin: 'com.google.cloud.tools.jib'
 apply plugin: 'com.gorylenko.gradle-git-properties'
 
-group = 'com.raksit.example'
+group = 'com.raksit.example.rule'
 version = '0.0.1'
 sourceCompatibility = 11
 
@@ -46,6 +46,8 @@ dependencies {
     implementation 'net.rakugakibox.spring.boot:logback-access-spring-boot-starter:2.7.1'
     implementation 'org.jeasy:easy-rules-core:4.1.0'
     implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.5.3'
+    implementation 'org.kie:kie-spring:7.66.0.Final'
+    implementation 'org.drools:drools-decisiontables:7.66.0.Final'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.2'
     testImplementation 'io.rest-assured:rest-assured:3.1.0'
