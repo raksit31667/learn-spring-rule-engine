@@ -2,9 +2,9 @@ package com.raksit.example.rule;
 
 import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
-import com.raksit.example.rule.activity.Activity;
-import com.raksit.example.rule.rule.CertificationBonusRule;
-import com.raksit.example.rule.rule.VideoConferenceRule;
+import com.raksit.example.rule.easy.activity.Activity;
+import com.raksit.example.rule.easy.rule.CertificationBonusRule;
+import com.raksit.example.rule.easy.rule.VideoConferenceRule;
 import org.jeasy.rules.api.Facts;
 import org.jeasy.rules.api.Rules;
 import org.jeasy.rules.api.RulesEngine;

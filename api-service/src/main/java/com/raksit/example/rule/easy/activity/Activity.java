@@ -1,4 +1,4 @@
-package com.raksit.example.rule.activity;
+package com.raksit.example.rule.easy.activity;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;

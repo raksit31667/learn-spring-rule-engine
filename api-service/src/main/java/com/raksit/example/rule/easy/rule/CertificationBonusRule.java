@@ -1,7 +1,7 @@
-package com.raksit.example.rule.rule;
+package com.raksit.example.rule.easy.rule;
 
-import com.raksit.example.rule.activity.Activity;
-import com.raksit.example.rule.activity.CertificationBonus;
+import com.raksit.example.rule.easy.activity.Activity;
+import com.raksit.example.rule.easy.activity.CertificationBonus;
 import lombok.extern.slf4j.Slf4j;
 import org.jeasy.rules.annotation.Action;
 import org.jeasy.rules.annotation.Condition;

@@ -1,16 +1,13 @@
-package com.raksit.example.rule.rule;
+package com.raksit.example.rule.easy.rule;
 
-import com.raksit.example.rule.activity.Activity;
-import com.raksit.example.rule.activity.CertificationBonus;
-import com.raksit.example.rule.activity.VideoConferenceBonus;
+import com.raksit.example.rule.easy.activity.Activity;
+import com.raksit.example.rule.easy.activity.VideoConferenceBonus;
 import lombok.extern.slf4j.Slf4j;
 import org.jeasy.rules.annotation.Action;
 import org.jeasy.rules.annotation.Condition;
 import org.jeasy.rules.annotation.Fact;
 import org.jeasy.rules.annotation.Priority;
 import org.jeasy.rules.annotation.Rule;
-
-import java.time.LocalDate;
 
 @Slf4j
 @Rule

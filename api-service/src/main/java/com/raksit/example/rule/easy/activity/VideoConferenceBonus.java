@@ -1,9 +1,8 @@
-package com.raksit.example.rule.activity;
+package com.raksit.example.rule.easy.activity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-import java.time.LocalDate;
 import java.util.Arrays;
 
 @Getter
